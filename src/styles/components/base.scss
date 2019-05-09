@@ -1,0 +1,55 @@
+html {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: $black;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.page-title {
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 10px 50px;
+}
+
+@include tablet-portrait {
+  .main {
+    align-items: center;
+
+    .page-title {
+      font-size: 2.5em;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@include tablet-landscape {
+  .main-content {
+    width: 100%;
+    max-width: 1000px;
+  }
+}

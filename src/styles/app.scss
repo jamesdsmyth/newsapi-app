@@ -1,0 +1,13 @@
+// importing all constants and dependables
+@import './constants/_reset.scss';
+@import './constants/_variables.scss';
+@import './constants/_breakpoints.scss';
+@import './constants/_mixins.scss';
+
+// importing all components with there respective media queries.
+@import './components/base.scss';
+@import './components/header.scss';
+@import './components/navigation.scss';
+@import './components/newsGrid.scss';
+@import './components/newsArticle.scss';
+@import './components/onlineStatusSection.scss';

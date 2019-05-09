@@ -1,0 +1,13 @@
+@keyframes gridAnimation {
+  0% {
+    background: $grey;
+  }
+
+  50% {
+    background: $white-off;
+  }
+
+  100% {
+    background: $grey;
+  }
+}
