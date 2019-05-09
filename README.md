@@ -2,9 +2,10 @@ Hello!
 
 ## Run production version
 To run the build version locally on a server we will be using [serve](https://www.npmjs.com/package/serve) which allows deployment of static sites. I had an issue viewing this on Node v7, so please make sure you have node v8 installed :).
-1. `npm run build`
-2. `npm install -g serve`
-3. `serve -s build`
+1. `npm install`
+2. `npm run build`
+3. `npm install -g serve`
+4. `serve -s build`
 
 Here is the documentation for [this](https://facebook.github.io/create-react-app/docs/deployment)
 
