@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 
 import NewsLanding from '../containers/NewsLanding';
 import NewsArticleLanding from '../containers/NewsArticleLanding';
@@ -10,6 +10,10 @@ class Main extends Component {
   render() {
     return (
       <main className="main">
+        <Route exact path="/" render={() => (
+            <Redirect to="/home"/>
+          )}
+        />
         {
           this.props.routes.map((item, index) => (
             <Route
