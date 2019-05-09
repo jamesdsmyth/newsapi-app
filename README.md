@@ -1,7 +1,7 @@
 Hello!
 
 ## Run production version
-To run the build version locally on a server we will be using [serve](https://www.npmjs.com/package/serve) whoch allows deployment of static sites. I had n issue viewing this on node version 7, so please make sure you have node v8 installed :).
+To run the build version locally on a server we will be using [serve](https://www.npmjs.com/package/serve) which allows deployment of static sites. I had an issue viewing this on Node v7, so please make sure you have node v8 installed :).
 1. `npm run build`
 2. `npm install -g serve`
 3. `serve -s build`
@@ -16,7 +16,8 @@ To run the development version locally -
 
 ## Run all tests
 To run the tests for this app, just run - 
-`npm run test`
+1. `npm install`
+2. `npm run test`
 
 ## Requirements
 - Need to be a Single Page Application - the app was built using React, React Router and state management using Redux
