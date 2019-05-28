@@ -1,20 +1,23 @@
 import React from 'react';
 import { shallow, configure } from 'enzyme';
 import sinon from 'sinon';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import NewsGridArticle from '../components/NewsGridArticle';
 import Adapter from 'enzyme-adapter-react-16';
+import renderer from 'react-test-renderer';
 
 import mockApiResponseSuccess from '../mockData/mock-api-success';
 import { idCreator } from '../helpers/idCreator';
 
 configure({ adapter: new Adapter() });
 
-describe('<NewsGridArticle /> a child of <NewsGrid />', () => {
+describe('<NewsGridArticle />', () => {
   const article = mockApiResponseSuccess.articles[0];
   const category = 'general'
   const index = 0;
   const articleId = idCreator(article.title);
+  
   const wrapper = shallow(
     <NewsGridArticle 
       article={article} 
@@ -65,6 +68,20 @@ describe('<NewsGridArticle /> a child of <NewsGrid />', () => {
 
   it('should render the <Link /> with the correct class', () => {
     expect(wrapper.find('Link').props().className).toBe('article__article-heading-link');
+  });
+
+  it('renders <NewsGridArticle /> and matches the snapshot', () => {
+    const component = renderer.create(
+      <Router>
+        <NewsGridArticle 
+          article={article} 
+          category={category} 
+          index={index} 
+        />
+      </Router>
+    );
+  
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should simulate the click event and expect an anonymous function', () => {

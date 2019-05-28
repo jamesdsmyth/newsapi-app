@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewsGridArticle /> renders <NewsGridArticle /> and matches the snapshot 1`] = `
+<article
+  className="article article--0"
+>
+  <div
+    className="article__article-image-container"
+  >
+    <img
+      alt="Maduro: 'Coup attempt' defeated as police clash with protesters - Al Jazeera English"
+      className="article__article-image"
+      src="https://www.aljazeera.com/mritems/Images/2019/5/1/f8cc2c622be846b5b049f09206901f1a_18.jpg"
+    />
+  </div>
+  <div
+    className="article__article-heading-container"
+  >
+    <span
+      className="article__article-source"
+    >
+      Al Jazeera English
+    </span>
+    <h2
+      className="article__article-heading"
+    >
+      <a
+        className="article__article-heading-link"
+        href="/general/maduro-coup-attempt-defeated-as-police-clash-with-protesters-al-jazeera-english"
+        onClick={[Function]}
+      >
+        Maduro: 'Coup attempt' defeated as police clash with protesters - Al Jazeera English
+      </a>
+    </h2>
+  </div>
+</article>
+`;

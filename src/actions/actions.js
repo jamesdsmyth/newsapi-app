@@ -6,7 +6,7 @@ export const getNewsAction = (category) => {
   }
 }
 
-// when the news is updated we will store all articles inthe correct category
+// when the news is updated we will store all articles in the correct category
 export const getNewsSuccessAction = (data, category) => {
   return {
     type: 'UPDATE_NEWS_SUCCESS',

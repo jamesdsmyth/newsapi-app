@@ -1,0 +1,666 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewsGrid /> in the main body renders <NewsGrid /> and matches the snapshot 1`] = `
+Array [
+  <article
+    className="article article--0"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Maduro: 'Coup attempt' defeated as police clash with protesters - Al Jazeera English"
+        className="article__article-image"
+        src="https://www.aljazeera.com/mritems/Images/2019/5/1/f8cc2c622be846b5b049f09206901f1a_18.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Al Jazeera English
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/maduro-coup-attempt-defeated-as-police-clash-with-protesters-al-jazeera-english"
+          onClick={[Function]}
+        >
+          Maduro: 'Coup attempt' defeated as police clash with protesters - Al Jazeera English
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--1"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="One Image of Japan’s Royals Tells a Story of Demographic Crisis - The New York Times"
+        className="article__article-image"
+        src="https://static01.nyt.com/images/2019/05/01/world/01emperor-1sub/01emperor-1sub-facebookJumbo.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        The New York Times
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/one-image-of-japan-s-royals-tells-a-story-of-demographic-crisis-the-new-york-times"
+          onClick={[Function]}
+        >
+          One Image of Japan’s Royals Tells a Story of Demographic Crisis - The New York Times
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--2"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Malak al-Shehri speaks out after Saudi Arabia detains husband - NBC News"
+        className="article__article-image"
+        src="https://media2.s-nbcnews.com/j/newscms/2019_18/2841471/190501-saudi-dissident-cs-655_8a866092b816d66fbe0378b0b39ab658.nbcnews-fp-1200-630.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        NBC News
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/malak-al-shehri-speaks-out-after-saudi-arabia-detains-husband-nbc-news"
+          onClick={[Function]}
+        >
+          Malak al-Shehri speaks out after Saudi Arabia detains husband - NBC News
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--3"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="This 'Game of Thrones' fan predicted the ending of the Battle of Winterfell a year ago - Mashable"
+        className="article__article-image"
+        src="https://mondrian.mashable.com/2019%252F05%252F01%252Fa8%252Fc1b5adf6569c489597dce2195e63ecec.b09ca.jpg%252F1200x630.jpg?signature=rpI_WkDTLcMI4XuaZfvppOhGnqE="
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Mashable
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/this-game-of-thrones-fan-predicted-the-ending-of-the-battle-of-winterfell-a-year-ago-mashable"
+          onClick={[Function]}
+        >
+          This 'Game of Thrones' fan predicted the ending of the Battle of Winterfell a year ago - Mashable
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--4"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="A huge Facebook redesign is coming - but it's far more than a new website - TechRadar"
+        className="article__article-image"
+        src="https://cdn.mos.cms.futurecdn.net/y4pcVzPhGwmuXQ28sTMkB-1200-80.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        TechRadar
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/a-huge-facebook-redesign-is-coming-but-it-s-far-more-than-a-new-website-techradar"
+          onClick={[Function]}
+        >
+          A huge Facebook redesign is coming - but it's far more than a new website - TechRadar
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--5"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="House Dems ratchet up threats to include fines, possible jail for noncompliant officials - NBC News"
+        className="article__article-image"
+        src="https://media4.s-nbcnews.com/j/newscms/2019_15/2818486/190411-elijah-cummings-cs-144p_b311e908f620008b665646972b892d5c.nbcnews-fp-1200-630.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        NBC News
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/house-dems-ratchet-up-threats-to-include-fines-possible-jail-for-noncompliant-officials-nbc-news"
+          onClick={[Function]}
+        >
+          House Dems ratchet up threats to include fines, possible jail for noncompliant officials - NBC News
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--6"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Study: Suicide attempts by self-poisoning have more than doubled in young people - 10TV"
+        className="article__article-image"
+        src="https://www.10tv.com/sites/default/files/styles/article_image/public/images/2016/07/26/Suicide.jpg?itok=96erc64-"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        10tv.com
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/study-suicide-attempts-by-self-poisoning-have-more-than-doubled-in-young-people-10tv"
+          onClick={[Function]}
+        >
+          Study: Suicide attempts by self-poisoning have more than doubled in young people - 10TV
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--7"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="AG William Barr faces lawmakers for the first time after release of special counsel Robert Mueller's report - USA TODAY"
+        className="article__article-image"
+        src="https://www.gannett-cdn.com/presto/2019/04/20/USAT/ca62fc31-0565-463f-b223-b567874cc67f-AP_APTOPIX_Trump_Russia_Probe.JPG?crop=3337,1872,x0,y43&width=3200&height=1680&fit=bounds"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        USA Today
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/ag-william-barr-faces-lawmakers-for-the-first-time-after-release-of-special-counsel-robert-mueller-s-report-usa-today"
+          onClick={[Function]}
+        >
+          AG William Barr faces lawmakers for the first time after release of special counsel Robert Mueller's report - USA TODAY
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--8"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Man is arrested in deadly shooting at UNC Charlotte campus on final day of classes - CNN"
+        className="article__article-image"
+        src="https://cdn.cnn.com/cnnnext/dam/assets/190430184116-uncc-lockdown-students-leave-library-super-tease.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        CNN
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/man-is-arrested-in-deadly-shooting-at-unc-charlotte-campus-on-final-day-of-classes-cnn"
+          onClick={[Function]}
+        >
+          Man is arrested in deadly shooting at UNC Charlotte campus on final day of classes - CNN
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--9"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Pochettino backs Tottenham medical staff over Vertonghen treatment - ESPN"
+        className="article__article-image"
+        src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F0430%2Fr536551_1296x729_16%2D9.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Espn.com
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/pochettino-backs-tottenham-medical-staff-over-vertonghen-treatment-espn"
+          onClick={[Function]}
+        >
+          Pochettino backs Tottenham medical staff over Vertonghen treatment - ESPN
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--10"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Huge 'God of Chaos' asteroid to pass near earth in 2029: report - Fox News"
+        className="article__article-image"
+        src="https://static.foxnews.com/foxnews.com/content/uploads/2019/05/apophis.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Fox News
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/huge-god-of-chaos-asteroid-to-pass-near-earth-in-2029-report-fox-news"
+          onClick={[Function]}
+        >
+          Huge 'God of Chaos' asteroid to pass near earth in 2029: report - Fox News
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--11"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Ex-Greenville mayor wins Dem primary in North Carolina, GOP candidates head to runoff | TheHill - The Hill"
+        className="article__article-image"
+        src="https://thehill.com/sites/default/files/electiondayvotevoting_0501818getty_0.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        The Hill
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/ex-greenville-mayor-wins-dem-primary-in-north-carolina-gop-candidates-head-to-runoff-thehill-the-hill"
+          onClick={[Function]}
+        >
+          Ex-Greenville mayor wins Dem primary in North Carolina, GOP candidates head to runoff | TheHill - The Hill
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--12"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Elon Musk SILENT after SpaceX Crew Dragon exploded in SHOCKING failed test - Express.co.uk"
+        className="article__article-image"
+        src="https://cdn.images.express.co.uk/img/dynamic/151/750x445/1121215.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Express.co.uk
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/elon-musk-silent-after-spacex-crew-dragon-exploded-in-shocking-failed-test-express-co-uk"
+          onClick={[Function]}
+        >
+          Elon Musk SILENT after SpaceX Crew Dragon exploded in SHOCKING failed test - Express.co.uk
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--13"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Apple Q2 2019 Earnings Show iPhone Business Stalling, But Services Expanding at Rapid Pace - Gizmodo"
+        className="article__article-image"
+        src="https://i.kinja-img.com/gawker-media/image/upload/s--4WhvaUuN--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/r9fjy292smk3pdgd9lfn.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Gizmodo.com
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/apple-q2-2019-earnings-show-iphone-business-stalling-but-services-expanding-at-rapid-pace-gizmodo"
+          onClick={[Function]}
+        >
+          Apple Q2 2019 Earnings Show iPhone Business Stalling, But Services Expanding at Rapid Pace - Gizmodo
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--14"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Minnesota cop found guilty of fatally shooting bride-to-be Justine Damond - New York Post "
+        className="article__article-image"
+        src="https://thenypost.files.wordpress.com/2019/04/190430-mohamed-noor.jpg?quality=90&strip=all&w=1200"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Nypost.com
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/minnesota-cop-found-guilty-of-fatally-shooting-bride-to-be-justine-damond-new-york-post-"
+          onClick={[Function]}
+        >
+          Minnesota cop found guilty of fatally shooting bride-to-be Justine Damond - New York Post 
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--15"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Facebook's F8 Keynote in 7 Minutes: All you need to know - Digital Trends"
+        className="article__article-image"
+        src={null}
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Youtube.com
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/facebook-s-f8-keynote-in-7-minutes-all-you-need-to-know-digital-trends"
+          onClick={[Function]}
+        >
+          Facebook's F8 Keynote in 7 Minutes: All you need to know - Digital Trends
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--16"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Brainstorm Health: '13 Reasons Why' and Suicide, Philip Morris Device, Medicare for All Hearing - Fortune"
+        className="article__article-image"
+        src="https://fortunedotcom.files.wordpress.com/2019/04/fortune-logo-1600x900-green.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Fortune
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/brainstorm-health-13-reasons-why-and-suicide-philip-morris-device-medicare-for-all-hearing-fortune"
+          onClick={[Function]}
+        >
+          Brainstorm Health: '13 Reasons Why' and Suicide, Philip Morris Device, Medicare for All Hearing - Fortune
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--17"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="FACT CHECK: Are 'Illegal Immigrants' To Blame for Measles Outbreaks Across the US? - Snopes.com"
+        className="article__article-image"
+        src="https://www.snopes.com/tachyon/2019/04/GettyImages-481681423.jpg?fit=1024,680"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Snopes.com
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/fact-check-are-illegal-immigrants-to-blame-for-measles-outbreaks-across-the-us-snopes-com"
+          onClick={[Function]}
+        >
+          FACT CHECK: Are 'Illegal Immigrants' To Blame for Measles Outbreaks Across the US? - Snopes.com
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--18"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Trump Federal Reserve pick Stephen Moore’s sexist writings upset Senate Republicans - Vox.com"
+        className="article__article-image"
+        src="https://cdn.vox-cdn.com/thumbor/8LFMWmCutgLySCCvsqcNJ1lE4Wg=/0x0:3680x1927/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/16202964/GettyImages_598116698.jpg"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Vox.com
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/trump-federal-reserve-pick-stephen-moore-s-sexist-writings-upset-senate-republicans-vox-com"
+          onClick={[Function]}
+        >
+          Trump Federal Reserve pick Stephen Moore’s sexist writings upset Senate Republicans - Vox.com
+        </a>
+      </h2>
+    </div>
+  </article>,
+  <article
+    className="article article--19"
+  >
+    <div
+      className="article__article-image-container"
+    >
+      <img
+        alt="Watch Facebook's F8 2019 keynote in 13 minutes - Engadget"
+        className="article__article-image"
+        src="https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=80&image_uri=https%3A%2F%2Fimg.vidible.tv%2Fprod%2F2019-04%2F30%2F5cc8df9f10ca0413cf3aa4ae%2F5cc8e038250420271ce3481f_o_U_v1.jpg&client=amp-blogside-v2&signature=d42bacc0fbb6904590d8c242d69db1f895794307"
+      />
+    </div>
+    <div
+      className="article__article-heading-container"
+    >
+      <span
+        className="article__article-source"
+      >
+        Engadget
+      </span>
+      <h2
+        className="article__article-heading"
+      >
+        <a
+          className="article__article-heading-link"
+          href="/general/watch-facebook-s-f8-2019-keynote-in-13-minutes-engadget"
+          onClick={[Function]}
+        >
+          Watch Facebook's F8 2019 keynote in 13 minutes - Engadget
+        </a>
+      </h2>
+    </div>
+  </article>,
+]
+`;

@@ -6,7 +6,7 @@ const Navigation = ({ routes, hideNavigation }) => (
   <nav className="navigation"> 
     <NavigationList 
       routes={routes}
-      hideNavigation={hideNavigation} 
+      hideNavigation={hideNavigation}
     />
   </nav>
 );

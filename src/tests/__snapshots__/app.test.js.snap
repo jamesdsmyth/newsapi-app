@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders <App /> and matches the snapshot 1`] = `
+<div
+  className="page-container"
+>
+  <header
+    className="header-content header-content--hidden"
+  >
+    <section
+      className="header-content__mobile-buttons"
+    >
+      <span
+        className="header-content__mobile-buttons__menu"
+        onClick={[Function]}
+      >
+        Menu
+      </span>
+      <span
+        className="header-content__mobile-buttons__menu__hide"
+        onClick={[Function]}
+      >
+        x
+      </span>
+    </section>
+    <nav
+      className="navigation"
+    >
+      <ul
+        className="navigation__main"
+      >
+        <li
+          className="navigation__main__list-item"
+          onClick={[Function]}
+        >
+          <a
+            aria-current="page"
+            className="navigation__main__list-item__link navigation__main__list-item__link--active"
+            href="/home"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            home
+          </a>
+        </li>
+        <li
+          className="navigation__main__list-item"
+          onClick={[Function]}
+        >
+          <a
+            aria-current={null}
+            className="navigation__main__list-item__link"
+            href="/business"
+            onClick={[Function]}
+          >
+            business
+          </a>
+        </li>
+        <li
+          className="navigation__main__list-item"
+          onClick={[Function]}
+        >
+          <a
+            aria-current={null}
+            className="navigation__main__list-item__link"
+            href="/entertainment"
+            onClick={[Function]}
+          >
+            entertainment
+          </a>
+        </li>
+        <li
+          className="navigation__main__list-item"
+          onClick={[Function]}
+        >
+          <a
+            aria-current={null}
+            className="navigation__main__list-item__link"
+            href="/health"
+            onClick={[Function]}
+          >
+            health
+          </a>
+        </li>
+        <li
+          className="navigation__main__list-item"
+          onClick={[Function]}
+        >
+          <a
+            aria-current={null}
+            className="navigation__main__list-item__link"
+            href="/science"
+            onClick={[Function]}
+          >
+            science
+          </a>
+        </li>
+        <li
+          className="navigation__main__list-item"
+          onClick={[Function]}
+        >
+          <a
+            aria-current={null}
+            className="navigation__main__list-item__link"
+            href="/sports"
+            onClick={[Function]}
+          >
+            sports
+          </a>
+        </li>
+        <li
+          className="navigation__main__list-item"
+          onClick={[Function]}
+        >
+          <a
+            aria-current={null}
+            className="navigation__main__list-item__link"
+            href="/technology"
+            onClick={[Function]}
+          >
+            technology
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    className="main"
+  >
+    <section
+      className="main-content"
+    >
+      <h1
+        className="page-title"
+      >
+        general
+         News
+      </h1>
+      <section
+        className="news-grid news-grid--loading"
+      >
+        <div
+          className="article article--0"
+        />
+        <div
+          className="article article--1"
+        />
+        <div
+          className="article article--2"
+        />
+        <div
+          className="article article--3"
+        />
+        <div
+          className="article article--4"
+        />
+        <div
+          className="article article--5"
+        />
+        <div
+          className="article article--6"
+        />
+        <div
+          className="article article--7"
+        />
+        <div
+          className="article article--8"
+        />
+        <div
+          className="article article--9"
+        />
+      </section>
+    </section>
+  </main>
+</div>
+`;

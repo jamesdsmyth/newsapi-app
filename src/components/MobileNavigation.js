@@ -8,7 +8,8 @@ const MobileNavigation = ({ showNavigation, hideNavigation }) => (
       onClick={showNavigation}>
       Menu
     </span>
-    <span 
+    <span
+      className="header-content__mobile-buttons__menu__hide"
       onClick={hideNavigation}>
       x
     </span>
