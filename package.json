@@ -35,6 +35,8 @@
   "devDependencies": {
     "enzyme": "^3.9.0",
     "expect": "^24.7.1",
+    "jest-fetch-mock": "^2.1.2",
+    "jest-mock-axios": "^3.0.0",
     "prop-types": "^15.7.2",
     "sinon": "^7.3.2"
   }
