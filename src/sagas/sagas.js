@@ -13,7 +13,7 @@ import { openDB, deleteDB, wrap, unwrap } from 'idb'
 
 let db;
 
-const dbPromise = createIndexedDB();
+// const dbPromise = createIndexedDB();
 
 async function createIndexedDB() {
 
@@ -27,7 +27,7 @@ async function createIndexedDB() {
         autoIncrement: true,
       });
       // Create an index on the 'date' property of the objects.
-      // store.createIndex('categories', 'categories');
+      // store.createIndex('categories', 'title');
     },
   });
 }
@@ -38,16 +38,19 @@ function saveCategoryDataLocally(article, category) {
   db.add('articles', {
     title: category,
     body: article,
-  });
+  }).then(response => console.log(response))
+  .catch(error =>  console.log(error));
 }
 
-function* getLocalEventData() {
+function* getLocalEventData(category) {
+
   if (!('indexedDB' in window)) {return null;}
-  yield dbPromise.then(db => {
-    const tx = db.transaction('articles', 'readonly');
-    const store = tx.objectStore('articles');
-    return store.getAll();
-  });
+  const store = yield db.transaction('articles').objectStore('articles');
+  const value = yield store.getAll();
+  console.log('valueeeee', value);
+  const val = value.filter(item => item.title === category);
+
+  return val[0];
 }
 
 
@@ -74,11 +77,17 @@ export function* getLatestNews(data) {
         id
       }
     });
-
-    yield put(getNewsSuccessAction(updatedArticles, category));
+    
     yield saveCategoryDataLocally(updatedArticles, category);
+    yield put(getNewsSuccessAction(updatedArticles, category));
+
   } catch(error) {
-    yield put(getNewsFailureAction(error, category));
+    const offlineContent = yield getLocalEventData(category);
+    if(offlineContent.body.length !== 0) {
+      yield put(getNewsSuccessAction(offlineContent.body, category));
+    } else {
+      yield put(getNewsFailureAction(error, category));
+    }
   }
 }
 
