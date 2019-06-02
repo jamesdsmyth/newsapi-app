@@ -9,11 +9,55 @@ import {
 
 import { idCreator } from '../helpers/idCreator';
 
+import { openDB, deleteDB, wrap, unwrap } from 'idb'
+
+let db;
+
+const dbPromise = createIndexedDB();
+
+async function createIndexedDB() {
+
+  db = await openDB('newsApp', 1, {
+    upgrade(db) {
+      // Create a store of objects
+      db.createObjectStore('articles', {
+        // The 'id' property of the object will be the key.
+        keyPath: 'title',
+        // If it isn't explicitly set, create a value by auto incrementing.
+        autoIncrement: true,
+      });
+      // Create an index on the 'date' property of the objects.
+      // store.createIndex('categories', 'categories');
+    },
+  });
+}
+
+createIndexedDB();
+
+function saveCategoryDataLocally(article, category) {
+  db.add('articles', {
+    title: category,
+    body: article,
+  });
+}
+
+function* getLocalEventData() {
+  if (!('indexedDB' in window)) {return null;}
+  yield dbPromise.then(db => {
+    const tx = db.transaction('articles', 'readonly');
+    const store = tx.objectStore('articles');
+    return store.getAll();
+  });
+}
+
+
 // this function will get the latest news and dispatch an action depending on the outcome
 // passing in the action data containing the category which is currently selected
 // getNewsSuccessAction() if successful
 // getNewsFailureAction() if there was an error
 export function* getLatestNews(data) {
+
+  console.log('navigator service worker', navigator.serviceWorker);
 
   // we convert 'home' to general as using 'home' for the category parameter will fail
   const category = data.category === 'home' ? 'general' : data.category;
@@ -32,7 +76,7 @@ export function* getLatestNews(data) {
     });
 
     yield put(getNewsSuccessAction(updatedArticles, category));
-
+    yield saveCategoryDataLocally(updatedArticles, category);
   } catch(error) {
     yield put(getNewsFailureAction(error, category));
   }
