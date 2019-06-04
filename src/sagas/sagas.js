@@ -19,15 +19,10 @@ async function createIndexedDB() {
 
   db = await openDB('newsApp', 1, {
     upgrade(db) {
-      // Create a store of objects
       db.createObjectStore('articles', {
-        // The 'id' property of the object will be the key.
         keyPath: 'title',
-        // If it isn't explicitly set, create a value by auto incrementing.
         autoIncrement: true,
       });
-      // Create an index on the 'date' property of the objects.
-      // store.createIndex('categories', 'title');
     },
   });
 }
@@ -47,7 +42,6 @@ function* getLocalEventData(category) {
   if (!('indexedDB' in window)) {return null;}
   const store = yield db.transaction('articles').objectStore('articles');
   const value = yield store.getAll();
-  console.log('valueeeee', value);
   const val = value.filter(item => item.title === category);
 
   return val[0];
@@ -59,9 +53,6 @@ function* getLocalEventData(category) {
 // getNewsSuccessAction() if successful
 // getNewsFailureAction() if there was an error
 export function* getLatestNews(data) {
-
-  console.log('navigator service worker', navigator.serviceWorker);
-
   // we convert 'home' to general as using 'home' for the category parameter will fail
   const category = data.category === 'home' ? 'general' : data.category;
 
@@ -83,6 +74,9 @@ export function* getLatestNews(data) {
 
   } catch(error) {
     const offlineContent = yield getLocalEventData(category);
+
+    // we check whether we have any offline content in the indexDB. If so we render that,
+    // else we show the failure message.
     if(offlineContent.body.length !== 0) {
       yield put(getNewsSuccessAction(offlineContent.body, category));
     } else {
