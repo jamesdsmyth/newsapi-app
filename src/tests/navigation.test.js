@@ -59,8 +59,4 @@ describe('<Navigation /> in the header', () => {
   it('should render the <NavLink /> with the correct href', () => {
     expect(wrapper.find('NavLink').at(index).props().to).toBe(`/${route.route}`);
   });
-
-  test('clicking on of the NavLinks', () => {
-    expect()
-  });
 });

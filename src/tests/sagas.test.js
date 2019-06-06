@@ -1,10 +1,13 @@
 import { takeLatest, put } from 'redux-saga/effects';
 import mockAxios from "axios";
 
-import rootSaga, { watchGetLatestNews, getLatestNews, isAppOnline, callApi } from '../sagas/sagas';
-import mockApiResponseSuccess from '../mockData/mock-api-success';
-import JestMockPromise from 'jest-mock-promise';
+import 
+  rootSaga, { 
+  watchGetLatestNews, 
+  isAppOnline, callApi
+} from '../sagas/sagas';
 
+import mockApiResponseSuccess from '../mockData/mock-api-success';
 
 describe('SAGAS', () => {
   it('should dispatch GET_LATEST_NEWS action', () => {
@@ -29,7 +32,6 @@ describe('SAGAS', () => {
   });
 
   it('calls axios with the correct URL and returns the correct data', async () => {
-    
     const category = 'general';
 
     mockAxios.get.mockImplementationOnce(() =>
@@ -40,10 +42,12 @@ describe('SAGAS', () => {
       })
     );
 
+    // calling axios API and returning the successful response
     const results = await callApi(category);
+    const articles = await results.data.results;
 
     // checking the result is equal to what we expect.
-    expect(results.data.results).toEqual(mockApiResponseSuccess.articles);
+    expect(articles).toEqual(mockApiResponseSuccess.articles);
 
     // checking we are only calling the get method once.
     expect(mockAxios.get).toHaveBeenCalledTimes(1);
