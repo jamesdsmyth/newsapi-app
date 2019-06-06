@@ -23,7 +23,7 @@ To run the tests for this app, just run -
 ## Requirements
 - Need to be a Single Page Application - the app was built using React, React Router and state management using Redux
 - Need to be PWA - the app is responsive, works offline with cached files/images, design is 'app like'. It wil show a warning message when the users internet is not connected but still serve up older content due to how the reducer has been put together.
- - Access offline to a previously visited content - the service workers take care of this and can be seen on the build version
+ - Access offline to a previously visited content - using IndexDB for the offline storage. Details can be found in indexDb.js file
 - Have a proper Manifest in place - See manfest.json
 - Cache all the static content - the service workers take care of this and can be seen on the build version
 - Test all the things - I have added tests and currently all pass
