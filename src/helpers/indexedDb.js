@@ -17,7 +17,7 @@ export async function saveCategoryDataLocally(article, category) {
   }
 
   // Uncaught (in promise) DOMException
-  // not sure why but this keeps dropping into the catch error even though it writes to the IndexDB store.
+  // not sure why but this keeps dropping into the catch error even though it writes to the IndexedDB store.
   try {
     await db.add('articles', {
       title: category,
@@ -28,7 +28,7 @@ export async function saveCategoryDataLocally(article, category) {
   }
 }
 
-// get the local data from the indexDB if it exists
+// get the local data from the indexedDB if it exists
 export function* getLocalEventData(category) {
   if (!('indexedDB' in window)) {
     return;
@@ -36,7 +36,7 @@ export function* getLocalEventData(category) {
   
   const db = yield openDB('newsApp', 1);
 
-  // if the IndexDB does not have an createObjectStore then we will return.
+  // if the IndexedDB does not have an createObjectStore then we will return.
   if(!db || db.objectStoreNames.length === 0) {
     return;
   }

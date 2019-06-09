@@ -8,7 +8,7 @@ import {
 } from '../actions/actions';
 
 import { idCreator } from '../helpers/idCreator';
-import { saveCategoryDataLocally, getLocalEventData } from '../helpers/indexDb.js';
+import { saveCategoryDataLocally, getLocalEventData } from '../helpers/indexedDb.js';
 
 // this function will get the latest news and dispatch an action depending on the outcome
 // passing in the action data containing the category which is currently selected
@@ -25,7 +25,7 @@ export function* getLatestNews(data) {
     // before writing to the store, we will add the id of the article for routing purposes
     const updatedArticles = updateArticles(articles);
     
-    // using the IndexDB offline storage, we call this async function that creates and writes the saved data to IndexDB.
+    // using the IndexedDB offline storage, we call this async function that creates and writes the saved data to IndexedDB.
     saveCategoryDataLocally(updatedArticles, category);
     yield put(getNewsSuccessAction(updatedArticles, category));
 
@@ -33,7 +33,7 @@ export function* getLatestNews(data) {
     // if we have offline content saved we will fetch it
     const offlineContent = yield getLocalEventData(category);
 
-    // we check whether we have any offline content in the indexDB. If so we render that,
+    // we check whether we have any offline content in the indexedDB. If so we render that,
     // else we show the failure message.
     if(offlineContent && offlineContent.body.length !== 0) {
       yield put(getNewsSuccessAction(offlineContent.body, category));
